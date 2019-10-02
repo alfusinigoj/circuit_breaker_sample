@@ -1,0 +1,10 @@
+---
+applications:
+- name: fortuneService-aj
+  path: bin\Release\netcoreapp2.2\publish
+  buildpacks:
+   - dotnet_core_buildpack
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - service-registry

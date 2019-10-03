@@ -15,7 +15,7 @@ namespace Fortune_Teller_UI.Services
             _logger = logger;
             IsFallbackUserDefined = true;
         }
-        public async Task<Fortune> RandomFortune(int id)
+        public async Task<Fortune> RandomFortune()
         {
             return await ExecuteAsync();
         }
